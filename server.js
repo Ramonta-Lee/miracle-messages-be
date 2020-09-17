@@ -13,10 +13,16 @@ const chaptersRouter = require("./api/chapterRouter.js");
 const partnerRouter = require("./api/partnerRouter");
 const volunteersRouter = require("./api/volunteersRouter.js");
 
+// Helps secure Express apps by setting HTTP headers
 server.use(helmet());
+// Cross-Origin Resource Sharing
 server.use(cors());
+
+// Middleware logging requests
 server.use(logger);
+// Package for: HTTP request logger
 server.use(morgan("dev"));
+
 server.use(fileupload());
 server.use(express.json());
 
