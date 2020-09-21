@@ -1,4 +1,6 @@
+// used to test HTTP requests
 const supertest = require('supertest');
+
 const server = require('./server');
 
 describe('server.js', () => {
