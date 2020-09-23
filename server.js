@@ -27,7 +27,7 @@ server.use(fileupload());
 server.use(express.json());
 
 server.get("/", (req, res) => {
-  res.status(200).json({ hello: "World!" });
+  res.status(200).json({Message:"Hello, I am up and running"});
 });
 
 // server.use("/api/upload", uploadRouter);
