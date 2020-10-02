@@ -5,7 +5,7 @@ const chapterDB = require("../models/chapters-model.js");
 const chaptersPartnersDB = require("../models/chapters-partners-model.js");
 const partnerDB = require("../models/partners-model");
 const chaptersVolunteersDB = require("../models/chapters-volunteers-model");
-const aws_link = "https://miraclemessagesimages.s3.amazonaws.com/";
+const aws_link = "https://miracle-messages2-images.s3.amazonaws.com/";
 const axios = require("axios");
 //TODO to be implemented
 const authenticationRequired = require("../middleware/Okta");
