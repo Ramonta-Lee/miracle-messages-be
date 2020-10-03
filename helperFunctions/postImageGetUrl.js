@@ -1,6 +1,10 @@
 const uploadToS3 = require("./uploadToS3.js");
-const aws_link =
-  "https://miracle-messages2-images.s3.us-east-2.amazonaws.com/";
+// const aws_link =
+//   "https://miracle-messages2-images.s3.us-east-2.amazonaws.com/";
+
+
+// Updated Virtual Hosted-Style
+const aws_link = "miracle-messages2-images.s3.us-east-2.amazonaws.com/"
 
 const postImageGetUrl = async function(img, res) {
   //pulling out the chapter_img file
