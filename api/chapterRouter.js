@@ -32,7 +32,7 @@ router.get("/", async (req, res) => {
     });
 
     chapters = await Promise.all(promises);
-    res.status(200).json(chapters);
+    res.status(200).json({chapters});
   } catch {
     res.status(500).json({
       error: "there was a problem getting chapter or partner information",
