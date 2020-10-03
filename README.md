@@ -31,7 +31,6 @@ To update S3 do the following
 3. Command: heroku config:set AWS_ACCESS_KEY_ID=xxx AWS_SECRET_ACCESS_KEY=yyy
 4. Command: heroku config:set S3_BUCKET_NAME=appname-assets
 
-
 #### Create dev and test databases (Windows)
 
 Set up Postgres and create databases for both the development server (miracle_be) and testing server (miracle_be_test)
@@ -40,7 +39,6 @@ Set up Postgres and create databases for both the development server (miracle_be
 2. Create a server if needed, if already created, turn server on by right clicking and pressing "Connect Server"
 3. Once connected, look for the drop down for databases and right click to Create a database
 4. Create a database called 'miracle_be' for the development connection & (miracle_be_test) for the testing connection
-
 
 ## Environmental Variables at Runtime
 
@@ -95,24 +93,18 @@ Set up Postgres and create databases for both the development server (miracle_be
 
 **Migrations/Seeds for Development Environment**
 
-
-
 1. To run migrations: "npx knex migrate:latest"
 2. To run seed files: "npx knex seed:run"
-
-
 
 **Migrations/Seeds for Testing Environment**
 
 Test database is depricated and not in use
 
-
-
 ==================== API Docs Start Here:=======================
- **BE API**
+**BE API**
 
 https://documenter.getpostman.com/view/9765799/SzfDxQme?version=latest
 
- **Okta API**
+**Okta API**
 
 https://documenter.getpostman.com/view/9765799/SzfDxQmk
