@@ -6,7 +6,8 @@ module.exports = {
     verifyPartnerImgFilename
 }
 
-const aws_link = "https://labs14-miracle-messages-image-upload.s3.amazonaws.com/";
+const aws_link =
+  "http://miracle-messages2-images.s3-website.us-east-2.amazonaws.com";
 
 
 

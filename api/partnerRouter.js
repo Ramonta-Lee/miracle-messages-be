@@ -7,7 +7,8 @@ const chaptersPartnersDb = require("../models/chapters-partners-model.js");
 const authenticationRequired = require("../middleware/Okta");
 // this link below is to specify the AWS S3 BUCKET where our images will live:
 
-const aws_link = "https://miracle-messages2-images-upload.s3.amazonaws.com/";
+const aws_link =
+  "http://miracle-messages2-images.s3-website.us-east-2.amazonaws.com";
 
 /****************************************************************************/
 /*                 Get all partners 
