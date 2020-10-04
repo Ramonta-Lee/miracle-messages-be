@@ -25,8 +25,10 @@ const authenticationRequired = require("../middleware/Okta");
 router.get("/", async (req, res) => {
   try {
     let chapters = await chapterDB.findChapters();
-
+    console.log("HELLO", chapters)
+    
     const promises = chapters.map(async (chapter) => {
+
       let partners = await partnerDB.findById(chapter.id);
       chapter.partners = partners;
       return chapter;
