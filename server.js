@@ -1,8 +1,8 @@
 const express = require("express");
 const server = express();
+const cors = require("cors");
 const morgan = require("morgan");
 const fileupload = require("express-fileupload");
-const cors = require("cors");
 const helmet = require("helmet");
 const authenticationRequired = require("./middleware/Okta.js");
 
