@@ -5,14 +5,14 @@ const oktaJwtVerifier = new OktaJwtVerifier({
   issuer: `https://${process.env.OKTA_DOMAIN}/oauth2/default`,
   clientId: process.env.CLIENT_ID,
   assertClaims: {
-    aud: "api://default"
-  }
+    aud: "api://default",
+  },
 });
 
 // Authenticates access token
 function authenticationRequired(req, res, next) {
   const authHeader = req.headers.authorization || "";
-  
+
   const match = authHeader.match(/Bearer (.+)/);
 
   if (!match) {
@@ -24,13 +24,13 @@ function authenticationRequired(req, res, next) {
 
   return oktaJwtVerifier
     .verifyAccessToken(accessToken, expectedAudience)
-    .then(jwt => {
+    .then((jwt) => {
       req.jwt = jwt;
-      console.log("token is valid")
+      console.log("token is valid");
       next();
     })
-    .catch(err => {
-      console.warn("token failed validation")
+    .catch((err) => {
+      console.warn("token failed validation");
       res.status(401).send(err.message);
     });
 }
